@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    font-family: inter;
+}
+.contanier{
+    margin: 0 56px;
+}
+p{
+    color: #545454;
+}
+.navbar i{
+    display: none;
+}
+.fr1 .image{
+    position: relative;
+    height: fit-content;
+}
+.fr1 .box2 .image::after{
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: -85px;
+    top: -20px;
+    border: 2px solid #1F1F1F;
+    z-index: -1;
+    border-radius: 5px;
+}
+.fr1 .box2 .image  i{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    font-size: 40px;
+    color: #fff;
+    background-color: #1F1F1F;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+.fr4 .icon{
+    background-color: #1f1f1f;
+    font-size: 15px;
+    padding: 9px 13px;
+    height: fit-content;
+    border-radius: 50px;
+    color: #FFFFFF;
+}
+.bafter{
+    position: relative;
+}
+.fr4 .bafter::after{
+    content: "";
+    position: absolute;
+    background-color:#9B9B9B;
+    width: 2px;
+    height: 52px;
+    bottom: calc(50% - 65px);
+    left: 19px;
+}
+.fr5{
+    margin: 160px auto;
+    max-width: 1024px;
+}
+.fr5 .boxes{
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+    gap: 30px;
+}
+.fr5 .boxes .box{
+    width: 400px;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 30px;
+    border-radius: 3px;
+}
+.fr5 .boxes .box img{
+    width: 50px;
+}
+.fr5 .image .icon i{
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 20px;
+    color: #1f1f1f;
+    margin: 15px 15px 0 0;
+}
+.fr6{
+    text-align: center;
+    position: relative;
+}
+footer .text{
+    width: 650px;
+    margin: auto;
+    background-color: #fffefc;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: -36px;
+}
+footer .text input{
+    margin:0 10px;
+    background-color: #bda97100;
+    width: 100%;
+    outline: none;
+    color: #1f1f1f;
+}
+footer{
+    background-color: #1f1f1f;
+    color: white;
+    padding: 100px 30px 20px;
+    position: relative;
+}
+footer p{
+    margin: 20px 0;
+    color: #d1d1d1;
+}
+footer h4{
+    font-size: 20px;
+}
+footer .box{
+    width: 200px;
+}
+footer img{
+    background-color: white;
+    border-radius: 10px 0 0 10px;
+    width: 150px;
+}
+footer i{
+    background-color: #473939;
+    padding: 7px;
+    margin: 0 5px;
+}
+@media  (max-width: 1100px) {
+   .fr1 .calc{
+      gap: 0;
+      flex-direction: column;
+      margin: 10px;
+   }
+   .fr1 .calc .num{
+      width: 100px;
+      text-align: center;
+      margin: 10px;
+   }
+   .fr1 .calc .num h6{
+    font-size: 30px;
+   }
+   .fr1 .calc .num p{
+    font-size: 15px;
+   }
+   .fr5 .image{
+    display: none;
+   }
+   .fr5 .boxes{
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+   }
+}
+@media only screen and (max-width: 850px){
+    .contanier{
+        margin: 0 25px;
+    }
+    h1{
+        text-align: center;
+    }
+    .navbar i{
+        display: block;
+        cursor: pointer;
+    }
+    .navbar .option{
+        display: none;
+        position: absolute;
+        top: 65px;
+        background-color: #1f1f1f;
+        width: 260px;
+        padding: 20px;
+        border-radius: 0px 50px;
+    }
+    .navbar .option p{
+        color: white;
+        margin: 20px 0;
+        border-bottom: 2px solid;
+    }
+    .navbar:hover .option {
+        display: block;
+    }
+    .fr1 img,
+    .fr3 img,
+    .fr4 img,
+    .fr1 .box2 .image{
+        display: none;
+    }
+    .fr1{
+        text-align: center;
+    }
+    .fr1 .box1 .text h1{
+        font-size: 70px;
+    }
+    .fr2 .boxes,
+    .fr5 .boxes{
+        flex-direction: column;
+    }
+    .fr5 .boxes .box {
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .fr1 .text p{
+        margin: auto;
+    }
+    .fr1 .box2 .text{
+        margin: 50px auto;
+    }
+    footer img{
+        margin: auto;
+    }
+    footer .text {
+        width: 350px;
+    }
+    .fr1 .calc {
+        flex-direction: row;
+        margin: 15px auto;
+    }
+    .fr1 .calc .num {
+        width: 75px;
+    }
+}
+  
